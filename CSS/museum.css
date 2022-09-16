@@ -1,0 +1,47 @@
+.grid-container {
+  background-image: url(/Image/1258px-KANDY_TEA_MUSEUM_KANDY_TOWN_SRI_LANKA_JAN_2013_8583226551.webp);
+}
+.gallery {
+  background-color: #1d4934;
+  color: white;
+  padding: 20px;
+  border: 20px;
+  margin: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+.gallery h3{
+    font-size: 1.5em;
+}
+.gallery .images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.gallery img {
+  width: 32%;
+  border-radius: 10px;
+}
+.section .text-content ul{
+    margin-left: 40px;
+}
+.section .map {
+    width: 50%;
+}
+.section .map iframe{
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    .images{
+        flex-direction: column;
+    }
+    .images img{
+        width: 100%;
+    }
+    .section .map{
+        width: 100%;
+    }
+}

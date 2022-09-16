@@ -1,0 +1,67 @@
+.grid-container {
+  background-image: url(/Image//plantationscover.webp);
+}
+.section .text-content {
+  width: 65%;
+}
+.section .media {
+  width: 30%;
+}
+.section .media img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.section .media iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 0 0 10px 10px;
+}
+.table {
+  margin: 0 30px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid #1d4934;
+}
+table caption {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+thead,
+tfoot {
+  text-align: center;
+  font-weight: bold;
+  background: #1d4934;
+  color: white;
+}
+tr td{
+    border-bottom: 3px solid #1d4934;
+}
+tbody tr img {
+  width: 75px;
+}
+th,
+td {
+  padding: 10px;
+}
+tbody tr td:nth-of-type(2) {
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .section .text-content {
+    width: 100%;
+  }
+  .section .media {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .section .media {
+    width: 100%;
+  }
+}

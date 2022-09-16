@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1d4934;
+  height: 90px;
+}
+nav li {
+  float: left;
+}
+li a {
+  display: block;
+  padding: 25px 16px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #3b7a5b;
+  height: 90px;
+}
+.grid-container {
+ /* background-image: url('Image/tea_garden_0.webp');
+  background-size: cover;
+  background-repeat: no-repeat; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
+
+.bg-image{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.logo {
+  width: 200px;
+}
+.main-heading h1 {
+  font-size: 80px;
+}
+.main-heading h3 {
+  font-size: 30px;
+}
+.section,
+.list-section {
+  background-color: #1d4934;
+  color: white;
+  padding: 20px;
+  border: 20px;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  gap: 15px;
+}
+.section .text-content {
+  text-align: justify;
+  color: white;
+}
+.section .text-content a {
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.section .text-content a:hover {
+  color: #00ff00;
+  text-decoration: underline;
+}
+.section img {
+  width: 50%;
+  border-radius: 10px;
+}
+.list-section .list {
+  width: 40%;
+}
+.list-section .list img {
+  width: 100%;
+  border-radius: 10px;
+}
+.list-section .list ol li,
+.list-section .list ul li {
+  margin-left: 40px;
+}
+
+.button {
+ border: none;
+ padding: 10px 25px;
+ text-decoration: none;
+ display: inline-block;
+ font-family: 'Poppins', sans-serif;
+ margin: 4px 2px;
+ transition-duration: 0.4s;
+cursor: pointer; 
+}
+.button1{
+  background-color: #4d9c4d;
+  border: 1px solid #ffffff;
+  font-size: 2.5vh; 
+}
+.button1:hover{
+  background-color: black;
+  color: black;
+  border: 2px solid #4d9c4d;
+}
+
+footer {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1d4934;
+  height: 10vh;
+  font-size: 2vh;
+  color: white;
+  align-items: center;
+}
+footer a {
+  color: white;
+  transition: 0.4s;
+}
+footer a:hover {
+  color: #00ff00;
+}
+@media screen and (max-width: 768px) {
+  .main-heading h1 {
+    font-size: 50px;
+    color: black;
+  }
+  .main-heading h3 {
+    font-size: 20px;
+    color: black;
+  }
+  .bg-image {
+    display: none;
+  }
+  .section,
+  .list-section {
+    flex-direction: column;
+  }
+  .section img,
+  .list-section .list {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column-reverse;
+    text-align: center;
+   
+  }
+
+ 
+}

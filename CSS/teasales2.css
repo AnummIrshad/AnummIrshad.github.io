@@ -1,0 +1,139 @@
+.section {
+  background-color: white ;
+}
+.salesp{
+  color: black;
+}
+p{
+  color: white;
+}
+h1 {
+  color: black;
+}
+.main-heading {
+  margin-left: 5vh;
+}
+.salesimg {
+  flex-direction: row;
+  width: auto;
+  height: 60vh;
+  border: 30px solid #466322;
+  border-radius: 25px;
+}
+.polaroid {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+.products-heading {
+  letter-spacing: 0.3em;
+  font-size: 7vh;
+  flex-direction: row;
+  margin-left: 5vh;
+  animation-timing-function: ease;
+}
+.anim {
+  animation: mymove 5s infinite;
+  font-weight: bold;
+  position: relative;
+  background-color: #c7e0a9;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 60px;
+  column-gap: 1px;
+  row-gap: 15px;
+  padding: 15px;
+}
+.col-4 {
+  flex-direction: row;
+  flex-basis: 25%;
+  border-radius: 25px;
+  border: 5px solid #75a13e;
+  background-color: #466322;
+  padding: 25px;
+}
+
+.col-4 img {
+  width: 100%;
+  border-radius: 25px;
+}
+.button {
+  border: none;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  margin: 1px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.button1 {
+  background-color: white;
+  color: #0e271b;
+  border: 1px solid #0e271b;
+  font-size: 17px;
+}
+.button1:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid #75a13e;
+}
+
+@media screen and (max-width: 768px) {
+  .images{
+      flex-direction: column;
+  }
+  .images img{
+      width: 100%;
+  }
+  .section .map{
+      width: 100%;
+  }
+  .row{
+    flex-direction: column;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
+  .products-heading {
+    letter-spacing: 0;
+    flex-direction: column;
+    margin-left: 5vh;
+    
+  }
+  .salesimg {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

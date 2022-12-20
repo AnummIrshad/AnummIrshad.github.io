@@ -11,6 +11,11 @@
     />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/teasales1.css" />
+   
+    <link rel="stylesheet" href="CSS/tickets.css" />
+    <link rel="stylesheet" href="CSS/donations.css" />
+  
+  
     <title>Purchases and donations</title>
     <link rel="apple-touch-icon" sizes="180x180" href="Image/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="Image/favicon-32x32.png">
@@ -21,7 +26,7 @@
 <meta name="msapplication-config" content="Image/browserconfig.xml">
 <meta name="theme-color" content="#000000">
   </head>
-  <body>
+  
     <header>
       <nav>
         <ul>
@@ -36,16 +41,139 @@
       </nav>
     </header>
 
+   
 
-    <div class="main-heading">
-      <h1>PURCHASE & DONATE</h1>
-      </div>
-      <h1 class="pdh">Local merchandise</h1>
+<body>
+  <link rel="stylesheet" type="text/css" href="CSS/donations.css">
 
+      <!--Main heading
+
+      <br>
+
+      <h1 class="pdh">DONATE & PURCHASE </h1> -->
+      <div class="container maindonate" id="ticket-form">
+       
+
+       <div class="donationheading">MAKE A DONATION</div><br>
+
+
+
+<!--MAIN DONATION FORM START-->
+
+
+
+
+<div class="donation-form">
+    <form action="" class="contact-col" id="frmDonation">
+        <label for="nameinput"></label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Enter your email" required >
+ 
+       
+        <textarea  rows="2" id="address" placeholder="Enter your address" required ></textarea>
+
+
+          <label for="Donations" id="fixedDonations" class="lbdate">Select fixed Donation values from below list</label>
+          <select name="language" class="custom-select" id="fixedDonatons" multiple >
+           
+              <option class="amountselect" value="100">LKR 100 </option>
+              <option class="amountselect" value="500">LKR 500 </option>
+              <option class="amountselect" value="1000">LKR 1000 </option>
+              <option  class="amountselect" value="2500">LKR 2000 </option>
+              <option class="amountselect" value="5000">LKR 5000 </option>
+              <option class="amountselect" value="5000">LKR 10000 </option>
+             
+  
+        
+            </select>
+  
+
+       
+    </form>
+ 
+    <form class="paymentDetails" action=""  method="post" >
+        <div class="inputBox">
+            <span>Card number</span>
+            <label for="cardNumber"></label>
+            <input type="text" id="cardNum" maxlength="16" class="card-number-input">
+        </div>
+        <div class="inputBox">
+            <span>Card holder</span>
+            <label for="cardholder"></label>
+            <input type="text" id="cardHolder" class="card-holder-input">
+        </div>
+ 
+       
+        <div class="flexbox">
+            <div class="inputBox" >
+                <span>expiration mm</span>
+                <select name="" id="monthInput" class="month-input">
+                    <option value="month" selected disabled>Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>expiration yy</span>
+                <select name="" id="yearInput" class="year-input" onselect="inputValidatiom()">
+                    <option value="year" selected disabled>Year</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option> 
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </div>
+            <div class="inputBox" id="cvvInput">
+                <span>cvv</span>
+                <input type="text" id="cvv" maxlength="3" class="cvv-input" >
+            </div>
+        </div>
+        <input type="button" value="Donate" id="donateBtn" class="submit-btn" onclick="inputValidation();">
+    </form>
+ 
+
+</div>
+ 
+<script src="Javascript/donate.js"> </script>
+ 
+</html>
+ 
+     
+
+</div>       
+
+</div>
+</div>
+
+
+<!--donation form end  -->
+
+
+
+  <!--LOCAL MERCHANDISE-->
+  
+<br>
+<div class="donationheading">LOCAL MERCHANDISE</div><br>
 
       <div class="row">
      
-     <div class="col-4 pdimg">
+     <div class="col-4 ">
        <img class="polaroid" src="Image/doorholder.webp"/>
        <p>WOODEN DOOR STOPPER<br>
          LKR 1450</p>
@@ -59,7 +187,7 @@
        <a class="button button1" href="">Add to cart</a>
        <a class="button button1 b2" href="">Buy</a>
      </div>
-     <div class="col-4 pdimg">
+     <div class="col-4">
       <img class="polaroid" src="Image/spoons.webp" />
       <p>COCONUT SPOON PACK  <br>
       LKR 3950</p>
@@ -75,7 +203,7 @@
        <a class="button button1 b2" href="">Buy</a>
      </div>
     
-     <div class="col-4 pdimg">
+     <div class="col-4">
       <img class="polaroid" src="Image/pencil.webp"/>
       <p>WOODEN PENCIL<br>
         LKR 450</p>
@@ -89,7 +217,7 @@
       <a class="button button1" href="">Add to cart</a>
       <a class="button button1 b2" href="">Buy</a>
     </div>
-    <div class="col-4 pdimg">
+    <div class="col-4">
       <img class="polaroid" src="Image/holder.webp" />
       <p>ALUMINIUM TRAY<br>
       LKR 2950</p>
@@ -105,39 +233,34 @@
     </div>
      </div>
     
+  
+</div>
+</div>
 
-     <div class="section pd">
-      <div class="text-content">
-        <h1>DONATE NOW</h1>
-        <p class="salesp">
-          The Ceylon Tea Industry is a rapidly growing field. Your support is critical to our
-          mission <br> We support various forms of fundraising such as 
-          donations, sponsorships and volunteering.<br> With your support, we work to
-           defend and protect our tea estates.Your 
-          gift helps conserve the most sustainable industry that produces
-          premium quality tea that has global ranking.
-          ecologically important lands <br><br>
-          <a class="button button1 donatebtn" href="">Donation</a>
-          <a class="button button1 donatebtn" href="">Sponsorship</a>
-          <a class="button button1 donatebtn" href="">Volunteer</a>
-        </p>
-      </div>
-      <img class="salesimg polaroid " src="Image/donation2.webp" alt="Home page" />
-    
-    </div>
+</body>
 
-   
-    
-    <footer>
-        <div class="copyright_text">
-          Copyright ©2022 <a href="#">Anumm Irshad</a> All rights reserved
-        </div>
-        <div class="policy_terms">
-          <a href="#">Privacy policy</a> &emsp;
-          <a href="#">Terms & condition</a>
-        </div>
+
+
+<footer>
+  <div class="copyright_text">
+    <p>Copyright ©2022 <a href="#">Anumm Irshad</a> All rights reserved</p>
+  </div>
+  <div class="policy_terms">
+    <a href="#">Privacy policy</a> &emsp;
+    <a href="#">Terms & condition</a>
+  </div>
+  </footer>
+ 
+
+
+  </html>
+
+
+<!--Donate containers-->
+
+
 <!--Reference links-->
 <!--https://odel.lk/souvenirs-gifts/mementos/c/851-->
-      </footer>
-    </body>
-  </html>
+    
+   
+ 

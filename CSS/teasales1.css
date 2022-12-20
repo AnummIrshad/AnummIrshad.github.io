@@ -2,7 +2,7 @@
   background-color: rgb(216, 216, 216);
 }
 .pd {
-  background-color: #aed87a;
+  background-color: rgb(70, 121, 70);
 }
 .salesp{
   color: black;
@@ -62,11 +62,6 @@ h1 {
   padding: 25px;
 }
 
-.pdimg {
-border: 5px solid #aed87a;
-background-color: #75a13e;
-padding: 25px;
-}
 
 .col-4 img {
   width: 100%;

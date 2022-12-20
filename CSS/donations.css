@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+/*---------------------------Donate Section-------------------------------*/
+.donate-us{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 40px 0px rgba(16, 65, 2, 0.274);
+    background-color: rgba(195, 255, 195, 0.11);
+    border-radius: 30px;
+    
+}
+.donate-us h1{
+   padding: 20px;
+   padding-top: 60px;
+   font-size: 30px;
+}
+.donate-us p{
+    font-size: 20px;
+    padding: 20px;
+}
+.donate-us h1 , .donate-us p{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    
+}
+.donate-information{
+    width: 90%;
+    margin: auto;
+}
+
+.donate-us-col{
+    flex-basis: 31%;
+    border-radius: 12px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 5px;
+    transition: 1s;
+    
+    
+    
+}
+.donate-us-col p{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.donate-us-col ul {
+    text-align: left;
+    border: #00000080 solid 2px;
+    border-radius: 12px;
+    padding: 8px;
+    
+}
+.donate-us-col ul li{
+    transform: translateX(-20px);
+}
+.donate-us-col img{
+    width: 100%;
+    border-radius: 12px;
+    max-height: min-content;
+    
+}
+.select {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    gap: 12px;
+  }
+  
+.select__item {
+    padding: 10px;
+    width: 18%;
+    height: 40px;
+    cursor: pointer;
+    font-family: "Heebo", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 3px;
+    background: #ffffff;
+    transition:1s;
+    border: #047016 solid;
+  }
+
+.select__item:hover  {
+    border: 1px black solid;
+  }
+  
+  .select__item--selected {
+    background: #009578;
+    color: #ffffff;
+    align-items: center;
+  }
+
+  #fixedDonations{
+    margin-top: 10px;
+    display: block;
+    color: rgb(48, 48, 48);
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    text-decoration:double;
+  }
+  .lbdate{
+    display: block;
+    color: rgb(48, 48, 48);
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 20.5px;
+}
+
+
+
+/*---------------------------------------------------Donation form--------------------------------------------------*/
+
+
+.donation-form{
+    background-color: #009578;
+    color: #009578 ;
+    margin-bottom: 30px;
+    box-shadow: 0 0 40px 0px rgba(16, 65, 2, 0.274);
+    border-radius: 30px;
+    padding: 5px;
+    width: 80%;
+    height: auto;
+    margin:auto;
+}
+
+
+.donation-form form input, .donation-form form textarea{
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+#frmDonation{
+    width: 80%;
+}
+
+.paymentDetails{
+    width: 80%;
+}
+/*-----------------------------------------------Card Payment details------------------------------------------------------*/
+
+.donation-form{
+    background-color: rgba(195, 255, 195, 0.075);
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0px rgba(16, 65, 2, 0.274);
+    overflow: hidden;
+    padding: 20px;
+    width: 65%;
+    padding-top: 30px;
+    padding-right: 30px;
+    margin: auto;
+    margin-bottom: 40px;
+    transition: 1s;
+}
+
+
+
+.donation-form  form{
+    margin: auto;
+    padding: 20px;
+}
+.donation-form  form .inputBox{
+    margin-top: 10px;
+}
+.donation-form form .inputBox span{
+    display: block;
+    color:#999;
+    padding-bottom: 5px;
+}
+.donation-form  form .inputBox input,
+.donation-form  form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+.donation-form  form .flexbox{
+    display: flex;
+    gap:15px;
+}
+.donation-form  form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+.donation-form  form .submit-btn{
+    width: 80%;
+    align-items: center;
+    transform: translateX(15%);
+    margin: auto;
+    background:#011B10;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+.donation-form  form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+
+.amountselect {
+    padding: 10px;
+    margin: 10px;
+    background-color: #022e1c;
+    color: #fff;
+}
+
+.custom-select {
+    width: 580px;
+    height: 150px;
+}

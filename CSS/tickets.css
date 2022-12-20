@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  align-items: center;
+  justify-content: left;
+  background-color: white;
+  margin-left: 20px;
+}
+
+/*MAIN COLOUR CODES
+  Emerald green- #011B10
+   lighter background-color: #022e1c;
+
+  light green- #E1EEC7
+  tusk- #b5ad70 */
+/* ticket buttons */
+.mainticketcontainer {
+  display: flex;
+}
+.box {
+  background: #022e1c;
+  width: 550px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 2px 2px 8px black;
+}
+
+.box label {
+  margin-right: 15px;
+}
+
+.box .button {
+  width: 37px;
+  height: 37px;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: #011b10;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.box .button:active {
+  background: #011b10;
+}
+
+.box input {
+  width: 60px;
+  height: 37px;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 22px;
+}
+
+.namelabel {
+  color: #f2f2f2;
+  font-size: 17px;
+}
+
+.container {
+  background-color: #011b10;
+  position: relative;
+
+  max-width: 1350px;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 0 15px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  box-shadow: 0 5px 10px black;
+  align-self: center;
+}
+
+.container header {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+}
+
+.container header::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 3px;
+  width: 27px;
+  left: 0;
+  background-color: beige;
+  border-radius: 8px;
+}
+
+.container form {
+  position: relative;
+  margin-top: 16px;
+  min-height: 490px;
+  width: 100%;
+  background: color #f2f2f2;
+}
+
+.detailsguest {
+  margin-top: 30px;
+}
+
+.title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 6px 0;
+  color: #011b10;
+}
+
+.duration {
+  background: white;
+  width: 550px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid white;
+  box-shadow: 2px 2px 8px black;
+}
+
+.gender {
+  font-size: 15px;
+  width: 350px;
+}
+fieldset {
+  height: 60px;
+}
+
+label {
+  font-size: 20px;
+}
+
+#inputbox {
+  width: 450px;
+  height: 60px;
+  display: flex;
+}
+
+#container form .fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fields .input-fields {
+  display: flex;
+  width: calc (100% / 4 -10px);
+  flex-direction: column;
+}
+
+*/
+
+
+
+
+
+/* FORM CSS */
+
+
+
+
+.input-fields label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #011b10;
+}
+.input-fields input {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 25px;
+  height: 42px;
+  margin: 8px 0;
+}
+
+.input-fields input:is(:focus, :valid) {
+  box-shadow: 0 3px 6px black;
+}
+
+/* FORM CSS END */
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 550px;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 25px 0;
+  background-color: #03482b;
+  transition: all 0.3 linear;
+}
+
+button:hover {
+  background-color: #057144;
+}
+
+button i {
+  margin: 0 6px;
+}
+/* increment */
+.wrapper {
+  height: 40px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #011b10;
+  border-radius: 50px;
+  box-shadow: #f2f2f2;
+}
+
+.wrapper span {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 490;
+  cursor: pointer;
+}
+
+.wrapper span.num {
+  font-size: 20px;
+
+  pointer-events: none;
+}
+
+.label-description {
+  font-size: 11px;
+}
+
+label {
+  color: #011b10;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 1100px;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 2px solid black;
+}
+
+td,
+th {
+  border: 3px solid black;
+  text-align: left;
+  padding: 8px;
+  color: #011b10;
+
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+#summury-table {
+  display: none;
+  text-align: center;
+  width: 100%;
+  font-size: 15px;
+  padding: 2px;
+  margin-top: 30px;
+}
+#summury-table tr th {
+  width: 240px;
+}
+
+#table-divider {
+  border-top: solid #011b10 3px;
+}
+
+#table-divider-final {
+  border-top: solid #011b10 6px;
+  border-bottom: solid #011b10 6px;
+}
+
+#divOrder {
+  margin: auto;
+  padding: 7px;
+  margin-top: 10px;
+}
+
+#localStorage {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+/*table end  */
+
+#divOrder {
+  margin: auto;
+  padding: 7px;
+  margin-top: 10px;
+}
+#localStorage {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+#addFavourite,
+#retriveFavourite {
+  display: inline-block;
+  width: 100%;
+  flex-basis: 49%;
+  background: #009578;
+  color: #fff;
+  border-radius: 10px;
+  transition: 1s;
+}
+#addFavourite {
+  padding: 15px;
+}
+#retriveFavourite {
+  padding: 15px;
+}
+#addFavourite:hover {
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+#retriveFavourite:hover {
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.title category-heading {
+  font-size: 40px;
+}
+
+.sectionticket {
+  background-color: #e1eec7;
+  color: white;
+  font-size: 20px;
+  padding: 40px;
+  border: 20px black;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 18px;
+  gap: 15px;
+}
+
+th,
+td {
+  border: red;
+}
+
+.gallery {
+  background-color: #011b10;
+  color: white;
+  padding: 20px;
+  border: 20px;
+  margin: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.gallery .images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.gallery img {
+  width: 32%;
+  border-radius: 10px;
+}
+
+h1 {
+  color: black;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  color: black;
+  font-size: small;
+  font-family: "Roboto", sans-serif;
+}
+
+/* TESTING CSS*/
+
+.maindonate {
+  background-color: #e1eec7;
+  box-shadow: grey;
+}
+
+.donationheading {
+  color: #011b10;
+  font-size: 40px;
+}
+
+#fixedDonations {
+  color: #011b10;
+}

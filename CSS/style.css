@@ -163,3 +163,76 @@ footer a:hover {
 
  
 }
+
+/* DONATE SEM 2 */
+
+#donate-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr ;
+    text-align: center;
+    justify-items: center;
+}
+#donate-container h3 {
+    background-color: var(--main-darker-color);
+    color: var(--main-bg-color);
+    font-size: 100%;
+}
+#donate-container img{
+    width: 40%;
+    box-shadow: none;
+    align-items: center;
+    padding-bottom: .5rem;
+}
+
+#donate-container div {
+    box-shadow: 3px 3px 5px var(--shadow-color);
+    width: 70%;
+    background: #fff;
+    padding: 2rem 0;
+    margin: 0.5rem 0;
+}
+
+
+/* Fixed donation form  */
+#fixed-amount-donate-container {
+  width: 60%;
+  margin: 3px auto;
+}
+#fixed-donation-form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#fixed-donation-form * {
+  margin: 5px;
+}
+
+#fixed-donation-form legend {
+  margin: 5px auto;
+}
+
+#fixed-donation-form input[type=number],
+#fixed-donation-form input[type=text],
+#fixed-donation-form input[type=tel]{
+  width: 90%;
+}
+
+#fixed-donation-form input[type=password] {
+  width: 60%;
+}
+
+.cc-expiration {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.donate-radio {
+  display:  flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#fixed-donation-form button {
+    width: 90%;
+    margin: 5px auto 10px auto;
+}

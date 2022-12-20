@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a page about  about Tea seller 2" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+     <!--CSS-->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/tickets.css" />
+
+     <!--JS-->
+    
+  </head>
+          
+          
+<!--Main heading-->
+ <div class="container" id="ticket-form">
+                <header>TICKET BOOKING</header> 
+    
+  <!--TICKET CATEGORY -->
+
+  <div class="mainticketcontainer">
+
+          <div class="sectionticket">
+           <div class="text-contentticket">
+                  
+                     
+                <title class="title">Select ticket category</title> 
+
+
+            <div class="box">
+               <label class="namelabel" for="slAdult">Sri Lankan adult:  LKR 1200 </label> 
+              
+                <div class="dec button" id="decrement1">-</div>
+                <input type="text" name="category" id="sladult" value="0" class="onput-field">
+                <div class="inc button" id="increment1">+</div>
+             </div>
+
+
+             <div class="box">
+              <label class="namelabel" for="slchild">Sri Lankan child (4-13 years) : <br>LKR 700 </label>
+             
+               <div class="dec button" id="decrement2">-</div>
+               <input type="text" name="category" id="slchild" value="0" class="onput-field">
+               <div class="inc button" id="increment2">+</div>
+            </div>
+
+            <div class="box">
+              <label class="namelabel" for="fadult">Foreign adult:  LKR 5500</label> 
+
+               <div class="dec button" id="decrement3">-</div>
+               <input type="text" name="category" id="fadult" value="0" class="onput-field">
+               <div class="inc button" id="increment3">+</div>
+            </div>
+
+            <div class="box">
+              <label class="namelabel"  for="fchild">Foreign child (4-13 years) : <br>LKR 2700</label> 
+
+               <div class="dec button" id="decrement4">-</div>
+               <input type="text" name="category" id="fchild" value="0" class="onput-field">
+               <div class="inc button" id="increment4">+</div>
+            </div>
+
+            <div class="box">
+              <label class="namelabel"  for="infant">Infant (under 4 years) : <br>Free</label> 
+
+               <div class="dec button" id="decrement5">-</div>
+               <input type="text" name="category" id="infant" value="0" class="onput-field">
+               <div class="inc button" id="increment5">+</div>
+            </div>
+<!--durration-->
+
+            <select class="duration" id="visit" name="visit" class="Select-item" >
+              <option id="visit" class="input-fields"  value="" selected disabled> Select duration </option>
+              <option  value="Three">Three hours </option>
+              <option value="half">Half day </option>
+              <option value="full">Full day </option>
+            </select> 
+<!--Add to order-->
+            <button class="nextBtn" id="calculate" onclick="calculate()"  onclick="addOnclick()">Add to order </button>
+            <!--<button class="nextBtn" id="calculateloyalty" onclick="showLoyaltyPoints()" >Loyalty </button>-->
+
+            <input id="checkLoyality" type="button" value="Check Loyality" class="nextBtn" onclick="showLoyaltyPoints()" >
+<!--showLoyaltyPoints-->
+           <button class="nextBtn" id="addToFavourite" onclick="favourite()"  >Add to fav </button>
+           <button class="nextBtn" id="orderFavourite" onclick="orderFav()"  >Order fav </button>
+            
+            
+           
+            
+            <fieldset>
+                  <label>Current total:</label>
+                  <label id="cost"></label>
+            </fieldset>
+          </div>
+         </div>
+
+
+ <!--GUEST DETAILS-->
+   <div class="sectionticket">
+      <div class="text-contentticket">
+
+    <form action="/" method="GET">
+      <title class="title">Enter guest details</title>
+
+<div class="fields">
+        <div class="input-fields">
+            <label for="name" >Full name:</label><br>
+            <input type="text" placeholder="Enter your name"required name="name" id="inputbox" >
+        </div>
+        
+        <div class="input-fields">
+            <label  for="mobile" >Mobile number:</label><br>
+            <input type="mobile" placeholder="Enter your mobile number"required  name="mobile" id="inputbox" >
+        </div>
+        
+        <div class="input-fields">
+            <label  for="email">Email:</label><br>
+            <input type="text" placeholder="Enter your email"required  name="email" id="inputbox">
+        </div>
+
+        <div class="input-fields">
+            <label for="confirmemail">Confirm email:</label><br>
+            <input type="text" placeholder="Confirm your email"required  name="confirmemail" id="inputbox" >
+        </div>
+
+        <select class="gender duration" id="visit" name="visit" class="Select-item">
+          <option id="visit" class="input-fields"  value="" selected disabled> Select gender </option>
+            <option  value="Three">Male </option>
+            <option value="half">Female </option>
+          </select>
+
+        <div class="input-fields">
+          <label for="confirmemail">Select date:</label><br>
+          <input type="date" id="date" value="Check-in date" value= "yyyy-MM-dd" name="date">
+           
+        </div>
+    </div>
+    
+</div>
+</div>
+         
+</div>
+<!--MULTIPLE ORDER START-->
+
+<div class="sectionticket">
+    <div class="text-contentticket">
+       <title class="title">Overall order</title> 
+
+        <div id="divOrder">
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>Local Adult</th>
+                        <th>Local Child</th>
+                        <th>Foreign Adult</th>
+                        <th>Foreign Child</th>
+                        <th>Infant</th>
+                       
+                        <th>Total</th>
+                        
+                    </tr>
+                    <tr>
+                      <th id="sladultamount"> </th>
+                      <th id="slchildamount"> </th>
+                      <th id="fadultamount"> </th>
+                      <th id="fchildamount"> </th>
+                      <th id="infantamount"> </th>
+                      <th id="total"> </th>
+                    </tr>
+                    <!--step 1: creating a new id so we can grab it in js-->
+                    <!--td have p tag with ids and tr with ids-->
+
+                </thead>
+            </table>
+
+       
+       <button class="nextBtn">
+            <span class="btnText" id="placeOrder" onclick="alertMessage()" >Place order</span>  
+        </button>
+      </div>  
+      <a class="button button1" href="museum.html">Back to museum page</a><br>
+
+        </div>
+        </div>
+<!--MULTIPLE ORDER END -->
+     
+        
+<!--
+        <button class="nextBtn">
+          <span class="btnText">Order favourite</span>
+          <i class="uil uil-navigator"></i>
+      </button>
+
+
+      <button class="nextBtn">
+        <span class="btnText">Loyalty points</span>
+        <i class="uil uil-navigator"></i>
+    </button>
+    -->
+
+   
+        <!--Images-->
+
+
+        <div class="gallery">
+            <h3>Ceylon Tea Museum</h3> <br>
+                 <div class="images">
+                 <img class="polaroid" src="Image/img_09.webp"  alt="Home page" />
+                 <img class="polaroid" src="Image/ctm1.webp"  alt="Home page"/>
+                 <img class="polaroid" src="Image/img_06.webp" alt="Home page"/>
+            </div>
+          </div>
+        </form> 
+   </div>
+      </div> 
+       </div>
+         </div>
+         <script src="Javascript/ticket.js"></script>
+            
+           
+            </html>
+
+
+     
+
+
+
+
+
+
+
